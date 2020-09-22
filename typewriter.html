@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="typewriter.css">
+
+    <title>Typewriter</title>
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="/" id="logo">Renan Lucena</a>
+        <nav>
+            <ul class="menu">
+                <li><a href="/">About</a></li>
+                <li><a href="/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <h2 class="titulo">Junior Deve&shy;loper spe&shy;ciali&shy;zed in&shy; Front-End.</h2>
+
+        <h3>CSS FLEXBOX</h3>
+
+            <section class="flex1">
+                <div>
+                    <img src="./img/lobo2.jpg">
+                    <p>Legenda</p>
+                </div>
+                <div>
+                    <img src="./img/lobo3.jpg">
+                    <p>Legenda</p>
+                </div>
+                <div>
+                    <img src="./img/lobo1.jpg">
+                    <p>Legenda</p>
+                </div>
+                <div>
+                    <img src="./img/lobo3.jpg">
+                    <p>Legenda</p>
+                </div>
+                <div>
+                    <img src="./img/lobo2.jpg">
+                    <p>Legenda</p>
+                </div>
+                <div>
+                    <img src="./img/lobo1.jpg">
+                    <p>Legenda</p>
+                </div>
+            </section>
+
+        <h3>CSS Grid</h3>
+
+            <section class="grid1">
+                <div>
+                    <img src="./img/lobo1.jpg">
+                    <p>Legenda</p>
+                </div>
+                <div>
+                    <img src="./img/lobo2.jpg">
+                    <p>Legenda</p>
+                </div>
+                <div>
+                    <img src="./img/lobo3.jpg">
+                    <p>Legenda</p>
+                </div>
+                <div>
+                    <img src="./img/lobo2.jpg">
+                    <p>Legenda</p>
+                </div>
+                <div>
+                    <img src="./img/lobo1.jpg">
+                    <p>Legenda</p>
+                </div>
+                <div>
+                    <img src="./img/lobo3.jpg">
+                    <p>Legenda</p>
+                </div>
+                <div>
+                    <img src="./img/lobo2.jpg">
+                    <p>Legenda</p>
+                </div>
+                <div>
+                    <img src="./img/lobo1.jpg">
+                    <p>Legenda</p>
+                </div>
+                <div>
+                    <img src="./img/lobo3.jpg">
+                    <p>Legenda</p>
+                </div>
+                <div class="anuncio">
+                    <img src="./img/wolf4.jpg">
+                    <p>anuncio</p>
+                </div>
+            </section>
+
+        <h3>CSS GRID 2</h3>
+
+            <section class="grid2">
+                <div class="grid2-items">
+                    <img src="./img/wolf4.jpg">
+                    <p>Legenda</p>
+                </div>
+                <div class="grid2-items">
+                    <img src="./img/lobo1.jpg">
+                    <p>Legenda</p>
+                </div>
+                <div class="grid2-items">
+                    <img src="./img/lobo2.jpg">
+                    <p>Legenda</p>
+                </div>
+            </section>
+
+        <!--Here it becomes a dark theme using #1d1e20 as background-->
+        
+        <section class="dark">
+            <h2>About</h2>    
+
+            <section class="About">
+                    <img src="./img/wolf4.jpg">
+                    <p>fifteen years old de&shy;velo&shy;per, lear&shy;ning mo&shy;re and mo&shy;re every&shy;day.</p>
+                    <p>Minimalistic, &shy;light and respon&shy;sive websi&shy;tes, all &shy;that you ne&shy;ed for your com&shy;pany.</p>
+                    <img src="./img/wolf4.jpg">
+            </section>
+            <h2 class="welcome">Thank you for use my site, you are always welcome!</h2>
+        </section>
+
+        <footer>
+            <p class="italic">ReenanDeveloper@hotmail.com</p>
+            <p class="italic">+55 (11) 96568-3640</p><br>
+
+            <p class="italic">Images by &copy;Origamid</p>
+            <p class="italic">&copy;Renan Lucena</p><br>
+        </footer>
+
+    <script>
+
+        function typeWriter(elemento) {
+            const textoArray = elemento.innerHTML.split('');
+            elemento.innerHTML = '';
+            textoArray.forEach((letra, i) => {
+                setTimeout(() => elemento.innerHTML += letra, 75 * i)
+            });
+        }
+
+        const titulo = document.querySelector('h2');
+        typeWriter(titulo);
+
+    </script>
+</body>
+</html>
